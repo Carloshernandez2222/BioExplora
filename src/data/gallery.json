@@ -1,0 +1,156 @@
+[
+  {
+    "id": "g-1",
+    "title": "Lagarto Azul en el Dosel de Gorgona",
+    "category": "Fauna",
+    "location": "PNN Isla Gorgona, Pacífico Colombiano",
+    "url": "images/galeria/g-1.jpg",
+    "description": "Anolis gorgonae asoleándose en el tronco de una palma húmeda insular. Su coloración azul celeste puro no existe en ningún otro reptil del mundo."
+  },
+  {
+    "id": "g-2",
+    "title": "Familia de Titíes Cabeciblancos",
+    "category": "Fauna",
+    "location": "SFF Los Colorados, Montes de María, Bolívar",
+    "url": "images/galeria/g-2.jpg",
+    "description": "Saguinus oedipus en el dosel del bosque seco tropical. El macho padre transporta a las crías en la espalda durante sus recorridos diarios."
+  },
+  {
+    "id": "g-3",
+    "title": "Páramo de Chingaza y Frailejones",
+    "category": "Ecosistema",
+    "location": "Cundinamarca y Meta, Cordillera Oriental",
+    "url": "images/galeria/g-3.jpg",
+    "description": "Las altas cumbres andinas de Colombia donde los frailejones gigantes (Espeletia) atrapan la niebla para formar ríos y lagunas sagradas."
+  },
+  {
+    "id": "g-4",
+    "title": "Rana Dorada en Hoja Húmeda",
+    "category": "Fauna",
+    "location": "Bosques de Niebla de Supatá, Cundinamarca",
+    "url": "images/galeria/g-4.jpg",
+    "description": "Pristimantis supatus brillando con sus tonos cobrizos y ojos saltones en un microhábitat que no supera los 20 kilómetros cuadrados."
+  },
+  {
+    "id": "g-5",
+    "title": "Perico del Sol entre Ramas de Alta Montaña",
+    "category": "Fauna",
+    "location": "Ecotonos de Subpáramo, Chingaza",
+    "url": "images/galeria/g-5.jpg",
+    "description": "Pyrrhura calliptera exhibiendo sus plumas alares amarillas. Es uno de los pocos loros del planeta adaptados al frío cercano a los cero grados."
+  },
+  {
+    "id": "g-6",
+    "title": "Orquídea Flor de Mayo en Floración",
+    "category": "Flora",
+    "location": "Cuenca del Alto Magdalena, Huila y Tolima",
+    "url": "images/galeria/g-6.jpg",
+    "description": "Cattleya trianae, flor nacional de Colombia, epífita que crece en las horquetas de grandes árboles sin parasitarlos."
+  },
+  {
+    "id": "g-7",
+    "title": "Selva Pluvial y Cascadas del Chocó",
+    "category": "Ecosistema",
+    "location": "Serranía del Baudó, Chocó Biogeográfico",
+    "url": "images/galeria/g-7.jpg",
+    "description": "Uno de los rincones más lluviosos y biodiversos de la Tierra, donde nacen ríos caudalosos que desembocan en el Pacífico."
+  },
+  {
+    "id": "g-8",
+    "title": "Rana de Cristal con Vientre Translúcido",
+    "category": "Fauna",
+    "location": "Cuenca del Río Quindío, Eje Cafetero",
+    "url": "images/galeria/g-8.jpg",
+    "description": "Centrolene quindianum cuidando sus huevos sobre una hoja colgante encima de una quebrada torrentosa no contaminada."
+  },
+  {
+    "id": "g-9",
+    "title": "Palmas de Cera en el Valle de Cocora",
+    "category": "Flora",
+    "location": "Salento, Quindío, Cordillera Central",
+    "url": "images/galeria/g-9.jpg",
+    "description": "Ceroxylon quindiuense, el árbol nacional de Colombia y la palma más alta del mundo, elevándose hasta 60 metros entre la niebla andina."
+  },
+  {
+    "id": "g-10",
+    "title": "Rana Venenosa Dorada en el Suelo Selvático",
+    "category": "Fauna",
+    "location": "Timbiquí, Costa Pacífica Caucana",
+    "url": "images/galeria/g-10.jpg",
+    "description": "Phyllobates terribilis con su color amarillo aposemático que advierte a cualquier depredador de la batracotoxina que alberga en su piel."
+  },
+  {
+    "id": "g-11",
+    "title": "Tángara Multicolor en el Dosel",
+    "category": "Fauna",
+    "location": "San Antonio / Kilómetro 18, Valle del Cauca",
+    "url": "images/galeria/g-11.jpg",
+    "description": "Chlorochrysa nitidissima, una de las aves más llamativas del planeta con siete tonalidades vivas en su plumaje, endémica de Colombia."
+  },
+  {
+    "id": "g-12",
+    "title": "Colibrí del Sol Libando en Alta Montaña",
+    "category": "Fauna",
+    "location": "Páramo de Frontino, Urrao, Antioquia",
+    "url": "images/galeria/g-12.jpg",
+    "description": "Coeligena orina con su deslumbrante gorguera azul zafiro, adaptado al frío extremo de las cumbres occidentales."
+  },
+  {
+    "id": "g-13",
+    "title": "Tití del Caquetá en Bosque Amazónico",
+    "category": "Fauna",
+    "location": "Cuenca del Río Orteguaza, Florencia, Caquetá",
+    "url": "images/galeria/g-13.jpg",
+    "description": "Plecturocebus caquetensis, primate monógamo descubierto en 2010 que entrelaza su cola con la de su pareja para dormir."
+  },
+  {
+    "id": "g-14",
+    "title": "Río Magdalena y Llanura Aluvial",
+    "category": "Ecosistema",
+    "location": "Barrancabermeja, Santander, Magdalena Medio",
+    "url": "images/galeria/g-14.jpg",
+    "description": "La gran arteria fluvial de Colombia, hábitat del Bagre Rayado (Pseudoplatystoma magdaleniatum) y escenario de la legendaria subienda."
+  },
+  {
+    "id": "g-15",
+    "title": "Cangrejo de Tierra de San Andrés",
+    "category": "Fauna",
+    "location": "Archipiélago de San Andrés, Providencia y Santa Catalina",
+    "url": "images/galeria/g-15.jpg",
+    "description": "Gecarcinus ruricola recorriendo el bosque seco insular con sus vibrantes tonos negro, rojo y amarillo antes de su migración reproductiva hacia el mar."
+  },
+  {
+    "id": "g-16",
+    "title": "Habas de la Sabana / Mutisia en Flor",
+    "category": "Flora",
+    "location": "Bosques Altoandinos de la Sabana de Bogotá y Boyacá",
+    "url": "images/galeria/g-16.jpg",
+    "description": "Mutisia clematis, enredadera endémica recolectada por José Celestino Mutis en 1764 cuyas flores colgantes rojo encendido alimentan colibríes de altura.",
+    "objectPositionClass": "object-[50%_56%]"
+  },
+  {
+    "id": "g-17",
+    "title": "Chivito de los Páramos sobre Frailejón",
+    "category": "Fauna",
+    "location": "Parque Nacional Natural Los Nevados, Cordillera Central",
+    "url": "images/galeria/g-17.jpg",
+    "description": "Oxypogon stuebelii exhibiendo su cresta y su barba morada y blanca a más de 3.800 metros de altitud en los páramos volcánicos."
+  },
+  {
+    "id": "g-18",
+    "title": "Floración del Magnolio del Valle",
+    "category": "Flora",
+    "location": "Bosques premontañosos de Risaralda (Municipio de Marsella)",
+    "url": "images/galeria/g-18.jpg",
+    "description": "Magnolia wolfii en Peligro Crítico (CR), árbol gigante cuyos contados ejemplares silvestres son polinizados manualmente por científicos locales.",
+    "objectPositionClass": "object-[50%_56%]"
+  },
+  {
+    "id": "g-19",
+    "title": "Rana de Cristal de Chingaza",
+    "category": "Fauna",
+    "location": "Parque Nacional Natural Chingaza, Cundinamarca",
+    "url": "images/galeria/g-19.jpg",
+    "description": "Centrolene buckleyi sobre una hoja húmeda encima de una quebrada cristalina de alta montaña, mostrando su delicada piel ventral translúcida."
+  }
+]

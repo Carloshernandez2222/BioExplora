@@ -1,0 +1,290 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+/* Tokens de color: cada paleta define sus valores en modo claro y oscuro. */
+@theme inline {
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: var(--c-primary);
+  --color-primary-strong: var(--c-primary-strong);
+  --color-accent: var(--c-accent);
+  --color-teal: var(--c-teal);
+  --color-gold: var(--c-gold);
+  --color-ink: var(--c-ink);
+  --color-bg: var(--c-bg);
+  --color-surface: var(--c-surface);
+  --color-surface-2: var(--c-surface-2);
+  --color-text: var(--c-text);
+  --color-muted: var(--c-muted);
+  --color-line: var(--c-line);
+  --color-on-primary: var(--c-on-primary);
+}
+
+/* Selva Esmeralda (por defecto) */
+:root,
+:root[data-palette='selva'] {
+  --c-primary: #1b5e3f;
+  --c-primary-strong: #144a31;
+  --c-accent: #2ecc71;
+  --c-teal: #1abc9c;
+  --c-gold: #f5a623;
+  --c-ink: #1b5e3f; /* color de texto destacado con contraste AA sobre el fondo */
+  --c-bg: #f7faf8;
+  --c-surface: #ffffff;
+  --c-surface-2: #eaf3ee;
+  --c-text: #11271c;
+  --c-muted: #4a5f54;
+  --c-line: #d5e4db;
+  --c-on-primary: #ffffff;
+}
+:root[data-theme='dark'],
+:root[data-theme='dark'][data-palette='selva'] {
+  --c-primary: #1f7a50;
+  --c-primary-strong: #19683f;
+  --c-ink: #6fe0a5;
+  --c-bg: #0c1611;
+  --c-surface: #13221a;
+  --c-surface-2: #1a2e23;
+  --c-text: #e5f1ea;
+  --c-muted: #a5bdb0;
+  --c-line: #2a4335;
+}
+
+/* Atardecer Caribe: naranja, coral y arena */
+:root[data-palette='caribe'] {
+  --c-primary: #b5441b;
+  --c-primary-strong: #933614;
+  --c-accent: #ff7f50;
+  --c-teal: #f4a259;
+  --c-gold: #f2c14e;
+  --c-ink: #a63d17;
+  --c-bg: #fff8ef;
+  --c-surface: #ffffff;
+  --c-surface-2: #fbeedd;
+  --c-text: #2d1a10;
+  --c-muted: #6b4f3f;
+  --c-line: #efdcc6;
+  --c-on-primary: #ffffff;
+}
+:root[data-theme='dark'][data-palette='caribe'] {
+  --c-primary: #b84a1a;
+  --c-primary-strong: #9c3f16;
+  --c-ink: #ffab85;
+  --c-bg: #1a110c;
+  --c-surface: #251912;
+  --c-surface-2: #312218;
+  --c-text: #f8ebe1;
+  --c-muted: #c9b0a0;
+  --c-line: #4a3326;
+}
+
+/* Páramo Andino: azul grisáceo, lila y verde musgo */
+:root[data-palette='paramo'] {
+  --c-primary: #3d5468;
+  --c-primary-strong: #2f4254;
+  --c-accent: #9b8ec4;
+  --c-teal: #7d9a5b;
+  --c-gold: #c9a227;
+  --c-ink: #3d5468;
+  --c-bg: #f4f6f8;
+  --c-surface: #ffffff;
+  --c-surface-2: #e8ecf1;
+  --c-text: #1c2530;
+  --c-muted: #55606c;
+  --c-line: #d6dde5;
+  --c-on-primary: #ffffff;
+}
+:root[data-theme='dark'][data-palette='paramo'] {
+  --c-primary: #4f6a82;
+  --c-primary-strong: #435b70;
+  --c-ink: #b9c9ff;
+  --c-bg: #10141a;
+  --c-surface: #181e26;
+  --c-surface-2: #212934;
+  --c-text: #e7ecf2;
+  --c-muted: #a9b4c0;
+  --c-line: #333e4b;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+}
+
+@layer base {
+  :focus-visible {
+    outline: 3px solid var(--c-gold);
+    outline-offset: 2px;
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, var(--c-accent), var(--c-teal));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Aparición suave de las secciones */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Tarjetas que se voltean */
+.flip {
+  perspective: 1200px;
+}
+.flip-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.flip.is-flipped .flip-inner {
+  transform: rotateY(180deg);
+}
+.flip-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flip-back {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(180deg);
+}
+
+/* Galería tipo mosaico */
+.masonry {
+  columns: 1;
+  column-gap: 1rem;
+}
+@media (min-width: 640px) {
+  .masonry {
+    columns: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .masonry {
+    columns: 3;
+  }
+}
+.masonry > * {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animate-pop {
+  animation: pop-in 0.6s ease-out both;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.animate-fade-up {
+  animation: fade-up 0.4s ease-out both;
+}
+
+/* Leaflet: integrar con el tema */
+.leaflet-container {
+  font-family: var(--font-sans);
+  background: var(--c-surface-2);
+}
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: var(--c-surface);
+  color: var(--c-text);
+}
+.leaflet-popup-content {
+  margin: 12px;
+}
+[data-theme='dark'] .leaflet-tile-pane {
+  filter: brightness(0.75) contrast(1.1) saturate(0.85);
+}
+.map-marker {
+  border-radius: 9999px;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Impresión del código QR para carteleras */
+@media print {
+  body.printing-qr * {
+    visibility: hidden !important;
+  }
+  body.printing-qr #qr-print,
+  body.printing-qr #qr-print * {
+    visibility: visible !important;
+  }
+  body.printing-qr #qr-print {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #000;
+  }
+}

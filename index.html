@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es-CO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioExplora Colombia – Especies Endémicas y Biodiversidad</title>
+    <meta
+      name="description"
+      content="Descubre las 20 especies endémicas de Colombia de nuestro voluntariado ambiental: fichas, mapa, trivia, afiches, evaluaciones con diploma y encuesta."
+    />
+    <meta name="theme-color" content="#1B5E3F" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:title" content="BioExplora Colombia – Especies Endémicas y Biodiversidad" />
+    <meta
+      property="og:description"
+      content="Descubre las especies que solo habitan en Colombia y por qué protegerlas es responsabilidad de todos."
+    />
+    <meta
+      property="og:image"
+      content="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Ensenada_de_Utr%C3%ADa.jpg/1280px-Ensenada_de_Utr%C3%ADa.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://upload.wikimedia.org" crossorigin />
+
+    <script>
+      // Aplica la paleta y el modo guardados antes de pintar, para evitar parpadeos.
+      (function () {
+        var d = document.documentElement;
+        try {
+          var p = JSON.parse(localStorage.getItem('bioexplora:palette') || '"selva"');
+          var t = JSON.parse(localStorage.getItem('bioexplora:theme') || 'null');
+          if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          d.setAttribute('data-palette', p);
+          d.setAttribute('data-theme', t);
+        } catch (e) {
+          d.setAttribute('data-palette', 'selva');
+          d.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

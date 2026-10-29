@@ -1,0 +1,374 @@
+{
+  "badges": [
+    {
+      "id": "badge-explorador",
+      "level": "voluntariado-1",
+      "levelNumber": 1,
+      "levelLabel": "Nivel 1 · Iniciación Científica",
+      "difficultyLabel": "Básica",
+      "name": "Insignia Explorador de la Biodiversidad",
+      "description": "Reconoce la comprensión inicial sobre qué es una especie endémica y la identificación de las especies insignia investigadas en Colombia.",
+      "criteria": "Aprobar el quiz de Nivel 1 (5 preguntas de dificultad básica) con mínimo 3 de 5 aciertos (60%).",
+      "totalQuestions": 5,
+      "minCorrectAnswers": 3,
+      "minScorePercent": 60,
+      "gradient": "from-emerald-500 to-teal-600",
+      "border": "border-emerald-500/40"
+    },
+    {
+      "id": "badge-guardian",
+      "level": "voluntariado-2",
+      "levelNumber": 2,
+      "levelLabel": "Nivel 2 · Conservación de Hábitats",
+      "difficultyLabel": "Intermedia",
+      "name": "Insignia Guardián Insular y de Ecosistemas",
+      "description": "Distingue a quienes comprenden cómo el aislamiento geográfico genera endemismos y el rol ecológico de nuestras especies en islas, bosques y páramos.",
+      "criteria": "Desbloquear el Nivel 1 y aprobar el quiz de Nivel 2 (5 preguntas intermedias) con mínimo 4 de 5 aciertos (80%).",
+      "totalQuestions": 5,
+      "minCorrectAnswers": 4,
+      "minScorePercent": 80,
+      "gradient": "from-sky-500 to-blue-600",
+      "border": "border-sky-500/40"
+    },
+    {
+      "id": "badge-divulgador",
+      "level": "voluntariado-3",
+      "levelNumber": 3,
+      "levelLabel": "Nivel 3 · Diagnóstico y Acción Ambiental",
+      "difficultyLabel": "Avanzada",
+      "name": "Insignia Divulgador Ambiental",
+      "description": "Acredita el análisis riguroso de categorías de amenaza UICN, tipos de endemismo y presiones ecológicas reales sobre la fauna y flora trabajadas.",
+      "criteria": "Desbloquear el Nivel 2 y aprobar el quiz de Nivel 3 (5 preguntas avanzadas) con mínimo 4 de 5 aciertos (80%).",
+      "totalQuestions": 5,
+      "minCorrectAnswers": 4,
+      "minScorePercent": 80,
+      "gradient": "from-amber-500 to-orange-600",
+      "border": "border-amber-500/40"
+    },
+    {
+      "id": "badge-defensor",
+      "level": "voluntariado-4",
+      "levelNumber": 4,
+      "levelLabel": "Nivel 4 · Embajador Científico del Territorio",
+      "difficultyLabel": "Experta",
+      "name": "Insignia Defensor del Territorio",
+      "description": "Máximo reconocimiento del voluntariado para quienes dominan la taxonomía científica, biogeografía evolutiva y genética de conservación de especies endémicas.",
+      "criteria": "Desbloquear el Nivel 3 y lograr puntaje perfecto en el quiz de Nivel 4: 5 de 5 aciertos (100%).",
+      "totalQuestions": 5,
+      "minCorrectAnswers": 5,
+      "minScorePercent": 100,
+      "gradient": "from-purple-500 to-indigo-600",
+      "border": "border-purple-500/40"
+    }
+  ],
+  "questions": {
+    "voluntariado-1": [
+      {
+        "id": 1001,
+        "level": "voluntariado-1",
+        "categoryLabel": "Concepto General de Endemismo",
+        "speciesRelated": "¿Qué es una especie endémica?",
+        "question": "¿Qué significa exactamente que una especie animal o vegetal sea \"endémica\" de Colombia?",
+        "options": [
+          "Que vive de forma silvestre en todos los países tropicales del mundo.",
+          "Que habita de manera natural únicamente dentro del territorio colombiano y en ningún otro lugar del planeta.",
+          "Que fue traída desde otro continente y se adaptó al clima nacional.",
+          "Que solo puede sobrevivir bajo cuidado humano en bioparques."
+        ],
+        "correctIndex": 1,
+        "explanation": "Una especie endémica tiene una distribución natural exclusiva de una región geográfica determinada; si desaparece de Colombia, se extingue para siempre en la Tierra."
+      },
+      {
+        "id": 1002,
+        "level": "voluntariado-1",
+        "categoryLabel": "Especie Endémica del Proyecto",
+        "speciesRelated": "Lagarto Azul de Gorgona",
+        "question": "¿Qué hace único en todo el planeta al Lagarto Azul trabajado en nuestro proyecto y dónde vive?",
+        "options": [
+          "Cambia a color rojo en el desierto de La Tatacoa.",
+          "Es el único lagarto completamente azul cielo brillante del mundo y vive solo en la Isla Gorgona (Pacífico).",
+          "Es un reptil marino gigante de las costas de San Andrés.",
+          "Habita en las nieves perpetuas de la Sierra Nevada del Cocuy."
+        ],
+        "correctIndex": 1,
+        "explanation": "Anolis gorgonae evolucionó aislado en la selva húmeda del Parque Nacional Natural Isla Gorgona y es el único lagarto 100% azul puro del mundo."
+      },
+      {
+        "id": 1003,
+        "level": "voluntariado-1",
+        "categoryLabel": "Especie Endémica del Proyecto",
+        "speciesRelated": "Tití Cabeciblanco",
+        "question": "¿En qué ecosistema y región natural de Colombia habita exclusivamente el Tití Cabeciblanco?",
+        "options": [
+          "En los bosques secos tropicales de la región Caribe colombiana.",
+          "En las sabanas inundables de la Orinoquía.",
+          "En los manglares fronterizos con Ecuador.",
+          "En los frailejonales por encima de los 3.800 metros."
+        ],
+        "correctIndex": 0,
+        "explanation": "El Tití Cabeciblanco (Saguinus oedipus), reconocible por su melena blanca, es exclusivo del bosque seco tropical del Caribe colombiano."
+      },
+      {
+        "id": 1004,
+        "level": "voluntariado-1",
+        "categoryLabel": "Especie Endémica del Proyecto",
+        "speciesRelated": "Rana Dorada de Supatá",
+        "question": "¿En qué departamento andino fue descubierta la diminuta Rana Dorada de Supatá?",
+        "options": [
+          "En Cundinamarca, dentro de húmedos bosques de niebla montanos.",
+          "En La Guajira, en zonas áridas costeras.",
+          "En Amazonas, sobre grandes ríos de llanura.",
+          "En el Archipiélago de San Andrés y Providencia."
+        ],
+        "correctIndex": 0,
+        "explanation": "Pristimantis supatus es una joya anfibia restringida a los bosques nublados de Supatá y San Francisco, en Cundinamarca."
+      },
+      {
+        "id": 1005,
+        "level": "voluntariado-1",
+        "categoryLabel": "Especie Endémica del Proyecto",
+        "speciesRelated": "Perico del Sol / Aliamarillo",
+        "question": "¿Cuál de las siguientes aves endémicas habita los bosques altoandinos y páramos como Chingaza?",
+        "options": [
+          "El Perico del Sol o Periquito Aliamarillo (Pyrrhura calliptera).",
+          "El Flamenco Rosado del Caribe.",
+          "El Avestruz de sabana.",
+          "El Pelícano Pardo marino."
+        ],
+        "correctIndex": 0,
+        "explanation": "El Periquito Aliamarillo está adaptado al frío de los bosques altoandinos y subpáramos de la Cordillera Oriental entre 1.700 y 3.400 m.s.n.m."
+      }
+    ],
+    "voluntariado-2": [
+      {
+        "id": 2001,
+        "level": "voluntariado-2",
+        "categoryLabel": "Concepto General de Endemismo",
+        "speciesRelated": "Aislamiento Biogeográfico",
+        "question": "¿Por qué lugares aislados como islas oceánicas (Gorgona) o páramos separados por valles profundos concentran tantas especies endémicas?",
+        "options": [
+          "Porque allí nunca ocurren lluvias ni cambios de temperatura.",
+          "Porque las barreras geográficas impiden el flujo genético con otras poblaciones, favoreciendo que evolucionen especies únicas adaptadas a ese entorno.",
+          "Porque los animales migran cada mes desde otros continentes hacia las cumbres.",
+          "Porque el suelo impide el crecimiento de cualquier planta nativa."
+        ],
+        "correctIndex": 1,
+        "explanation": "El aislamiento geográfico por mar, cordilleras o valles secos actúa como motor evolutivo (especiación alopátrica), originando especies irrepetibles."
+      },
+      {
+        "id": 2002,
+        "level": "voluntariado-2",
+        "categoryLabel": "Especie Endémica del Proyecto",
+        "speciesRelated": "Tití Cabeciblanco · Rol Ecológico",
+        "question": "¿Por qué el Tití Cabeciblanco es considerado una \"especie clave\" o jardinero irreemplazable del bosque seco tropical?",
+        "options": [
+          "Porque poda las raíces subterráneas de los cactus.",
+          "Porque dispersa más del 80% de las semillas de frutos carnosos que consume, regenerando la cobertura vegetal nativa.",
+          "Porque construye represas de madera en las quebradas estacionales.",
+          "Porque se alimenta únicamente de hojas secas caídas en el suelo."
+        ],
+        "correctIndex": 1,
+        "explanation": "Al desplazarse por el dosel y tragar semillas enteras que luego germinan, el Tití Cabeciblanco sostiene la regeneración natural del bosque seco."
+      },
+      {
+        "id": 2003,
+        "level": "voluntariado-2",
+        "categoryLabel": "Especie Endémica del Proyecto",
+        "speciesRelated": "Rana Dorada de Supatá · Adaptación",
+        "question": "¿Qué particularidad reproductiva le permite a la Rana Dorada de Supatá vivir en bromelias y hojarasca sin necesitar charcas de agua?",
+        "options": [
+          "Presenta desarrollo directo: del huevo emergen ranitas diminutas completamente formadas sin etapa de renacuajo nadador.",
+          "Sus huevos flotan en el viento hasta llegar al océano.",
+          "Solo se reproduce cada diez años durante inundaciones.",
+          "Deposita sus huevos dentro de nidos de aves acuáticas."
+        ],
+        "correctIndex": 0,
+        "explanation": "El género Pristimantis evolucionó el desarrollo embrionario directo dentro del huevo húmedo, independizándose de ríos o estanques abiertos."
+      },
+      {
+        "id": 2004,
+        "level": "voluntariado-2",
+        "categoryLabel": "Especie Endémica del Proyecto",
+        "speciesRelated": "Palma de Cera y Loro Orejiamarillo",
+        "question": "Dentro de las especies endémicas del catálogo BioExplora, ¿qué vínculo vital une al Loro Orejiamarillo con la Palma de Cera del Quindío?",
+        "options": [
+          "El loro depende de los troncos huecos de palmas de cera maduras para anidar y se alimenta de sus frutos.",
+          "El loro corta las hojas jóvenes de la palma para enterrarlas bajo tierra.",
+          "Compiten agresivamente por la luz solar del sotobosque.",
+          "Ambos habitan exclusivamente por debajo de los 100 metros de altitud."
+        ],
+        "correctIndex": 0,
+        "explanation": "La destrucción histórica de la Palma de Cera (Ceroxylon quindiuense) dejó sin sitios de nidificación al Loro Orejiamarillo (Ognorhynchus icterotis)."
+      },
+      {
+        "id": 2005,
+        "level": "voluntariado-2",
+        "categoryLabel": "Concepto General de Endemismo",
+        "speciesRelated": "Vulnerabilidad de Especies Endémicas",
+        "question": "¿Por qué una especie endémica de distribución restringida corre mucho mayor riesgo de extinción que una especie de amplia distribución continental?",
+        "options": [
+          "Porque tiene poblaciones concentradas en áreas pequeñas: si ese hábitat específico se destruye o contamina, no existen poblaciones de respaldo en otros países.",
+          "Porque las especies endémicas viven menos de un mes.",
+          "Porque no cumplen ninguna función dentro de las cadenas alimenticias.",
+          "Porque prefieren habitar zonas urbanas pavimentadas."
+        ],
+        "correctIndex": 0,
+        "explanation": "Al carecer de poblaciones silvestres en otras regiones del mundo, cualquier pérdida de su único hábitat impacta al 100% de la especie global."
+      }
+    ],
+    "voluntariado-3": [
+      {
+        "id": 3001,
+        "level": "voluntariado-3",
+        "categoryLabel": "Concepto General de Endemismo",
+        "speciesRelated": "Endemismo Estricto, Cuasi-endemismo y Microendemismo",
+        "question": "En biogeografía de la conservación, ¿cuál es la distinción correcta entre una especie \"microendémica\" y una \"cuasi-endémica\"?",
+        "options": [
+          "Microendémica significa que mide menos de 2 cm; cuasi-endémica que supera 1 metro de longitud.",
+          "La microendémica está confinada a un área diminuta y específica (como una sola isla o microcuenca); la cuasi-endémica habita principalmente en un país pero rebasa levemente una frontera ecológica vecina.",
+          "La cuasi-endémica es introducida por el ser humano y la microendémica es doméstica.",
+          "Ambos términos significan exactamente lo mismo en los listados de la UICN."
+        ],
+        "correctIndex": 1,
+        "explanation": "Especies como Anolis gorgonae (~26 km²) o Pristimantis supatus (<20 km²) son ejemplos críticos de microendemismo estricto dentro de Colombia."
+      },
+      {
+        "id": 3002,
+        "level": "voluntariado-3",
+        "categoryLabel": "Especie Endémica del Proyecto",
+        "speciesRelated": "Categorías UICN de las 4 Especies Insignia",
+        "question": "Comparando el estado de conservación UICN de las 4 especies insignia trabajadas en BioExplora, ¿cuál afirmación es científicamente exacta?",
+        "options": [
+          "Las cuatro están catalogadas en Preocupación Menor (LC) gracias a su abundancia.",
+          "El Lagarto Azul de Gorgona y el Tití Cabeciblanco están En Peligro Crítico (CR), la Rana Dorada de Supatá En Peligro (EN) y el Periquito Aliamarillo como Vulnerable (VU).",
+          "Solo el Periquito Aliamarillo está En Peligro Crítico (CR) y las demás no están amenazadas.",
+          "Todas se encuentran Extintas en Estado Silvestre (EW)."
+        ],
+        "correctIndex": 1,
+        "explanation": "Según las fichas científicas del proyecto (Humboldt / UICN): Anolis gorgonae (CR), Saguinus oedipus (CR), Pristimantis supatus (EN) y Pyrrhura calliptera (VU)."
+      },
+      {
+        "id": 3003,
+        "level": "voluntariado-3",
+        "categoryLabel": "Especie Endémica del Proyecto",
+        "speciesRelated": "Amenazas en Isla Gorgona y Supatá",
+        "question": "¿Cuáles son dos amenazas biológicas directas que presionan respectivamente al Lagarto Azul de Gorgona y a la Rana Dorada de Supatá?",
+        "options": [
+          "En Gorgona la depredación por especies introducidas (ratas negras y basiliscos) y en Supatá la pérdida de bosque nublado junto al riesgo del hongo quítrido.",
+          "En Gorgona las heladas glaciares y en Supatá la salinización marina.",
+          "En ambos territorios la pesca industrial con redes de arrastre.",
+          "La competencia con camellos introducidos y tormentas de arena."
+        ],
+        "correctIndex": 0,
+        "explanation": "Los ecosistemas insulares sufren severamente por depredadores invasores (Rattus rattus), mientras los anfibios andinos enfrentan fragmentación y quitridiomicosis."
+      },
+      {
+        "id": 3004,
+        "level": "voluntariado-3",
+        "categoryLabel": "Especie Endémica del Proyecto",
+        "speciesRelated": "Bosque Seco Tropical y Tití Cabeciblanco",
+        "question": "¿Qué magnitud de transformación histórica sufrió el Bosque Seco Tropical en Colombia, hábitat del Tití Cabeciblanco, y qué efecto produce en sus grupos familiares?",
+        "options": [
+          "Se conserva intacto en un 85%, permitiendo migraciones continuas hasta el Amazonas.",
+          "Ha perdido más del 95% de su cobertura original, aislando a las tropas en parches desconectados con alto riesgo de aislamiento genético.",
+          "Se transformó naturalmente en páramo húmedo hace un siglo.",
+          "Solo perdió un 10% cerca de las playas turísticas sin afectar su reproducción."
+        ],
+        "correctIndex": 1,
+        "explanation": "Queda menos del 5% al 8% del bosque seco tropical original en Colombia; por ello los corredores biológicos comunitarios son vitales para conectar tropas aisladas."
+      },
+      {
+        "id": 3005,
+        "level": "voluntariado-3",
+        "categoryLabel": "Especie Endémica del Proyecto",
+        "speciesRelated": "Rana Dardo Dorada (Phyllobates terribilis)",
+        "question": "En el catálogo endémico del Pacífico caucano y chocoano trabajamos la Rana Dardo Dorada. ¿Cuál es el origen biológico de su potente batracotoxina?",
+        "options": [
+          "La sintetiza de forma innata aunque nazca en laboratorios con dieta artificial.",
+          "La acumula y metaboliza a partir de pequeños artrópodos e insectos específicos de su dieta silvestre en la selva pluvial; en cautiverio pierde su toxicidad.",
+          "La absorbe del mercurio presente en las rocas volcánicas.",
+          "La inyecta mediante aguijones retráctiles en sus patas traseras."
+        ],
+        "correctIndex": 1,
+        "explanation": "Phyllobates terribilis obtiene los precursores alcaloides de su dieta natural en el Chocó biogeográfico (cuenca del río Saija) como defensa aposemática."
+      }
+    ],
+    "voluntariado-4": [
+      {
+        "id": 4001,
+        "level": "voluntariado-4",
+        "categoryLabel": "Especie Endémica del Proyecto",
+        "speciesRelated": "Nomenclatura Taxonómica Oficial",
+        "question": "Selecciona la relación 100% correcta de los nombres científicos binominales de las 4 especies insignia de BioExplora Colombia:",
+        "options": [
+          "Anolis gorgonae · Saguinus oedipus · Pristimantis supatus · Pyrrhura calliptera.",
+          "Diploglossus millepunctatus · Plecturocebus ornatus · Phyllobates terribilis · Ognorhynchus icterotis.",
+          "Anolis carolinensis · Cebus capucinus · Centrolene buckleyi · Crax alberti.",
+          "Iguana iguana · Alouatta seniculus · Rhinella marina · Ara ararauna."
+        ],
+        "correctIndex": 0,
+        "explanation": "Las cuatro especies foco del voluntariado son Anolis gorgonae (Lagarto Azul), Saguinus oedipus (Tití Cabeciblanco), Pristimantis supatus (Rana Dorada de Supatá) y Pyrrhura calliptera (Periquito Aliamarillo)."
+      },
+      {
+        "id": 4002,
+        "level": "voluntariado-4",
+        "categoryLabel": "Concepto General de Endemismo",
+        "speciesRelated": "Orogenia Andina y Radiación Adaptativa",
+        "question": "¿Qué configuración fisiográfica explica que Colombia sea líder mundial en aves y anfibios endémicos frente a países de mayor superficie territorial?",
+        "options": [
+          "El levantamiento y trifurcación de los Andes en tres cordilleras separadas por los valles interandinos del Cauca y Magdalena, sumado a islas oceánicas, macizos aislados (Santa Marta, Chiribiquete) y pisos térmicos ecuatoriales.",
+          "La homogeneidad plana de todo el territorio nacional sin barreras topográficas.",
+          "La presencia de cuatro estaciones térmicas polares a lo largo del año.",
+          "La ausencia total de depredadores naturales en el Neotrópico."
+        ],
+        "correctIndex": 0,
+        "explanation": "La compleja topografía de tres cordilleras, valles secos intermedios, el Chocó biogeográfico, el Escudo Guayanés y la Sierra Nevada generó miles de \"islas ecológicas\" de especiación."
+      },
+      {
+        "id": 4003,
+        "level": "voluntariado-4",
+        "categoryLabel": "Concepto General de Endemismo",
+        "speciesRelated": "Genética de la Conservación en Endémicas",
+        "question": "Cuando una especie endémica queda reducida a fragmentos aislados sin conectividad (como parches de bosque menores a 20 ha), ¿qué fenómeno genético-demográfico acelera su extinción local?",
+        "options": [
+          "Vigor híbrido espontáneo que duplica su tasa reproductiva indefinidamente.",
+          "Depresión endogámica y deriva génica (vórtice de extinción), que reducen la diversidad alélica y la capacidad inmunológica para resistir patógenos o cambios climáticos.",
+          "Mutación inmediata hacia hábitos acuáticos marinos.",
+          "Incremento infinito del tamaño poblacional efectivo (Ne)."
+        ],
+        "correctIndex": 1,
+        "explanation": "En poblaciones pequeñas y desconectadas, la consanguinidad y la deriva génica erosionan la variabilidad genética indispensable para la supervivencia evolutiva."
+      },
+      {
+        "id": 4004,
+        "level": "voluntariado-4",
+        "categoryLabel": "Especie Endémica del Proyecto",
+        "speciesRelated": "Pyrrhura calliptera, Espeletia y Corredores Altitudinales",
+        "question": "¿Por qué la conservación de Pyrrhura calliptera requiere proteger un gradiente continuo entre el bosque altoandino (1.700 m) y el subpáramo/páramo (3.400 m) en la Cordillera Oriental?",
+        "options": [
+          "Porque realiza desplazamientos altitudinales estacionales: anida en cavidades de árboles maduros del bosque nublado y asciende al subpáramo para forrajear semillas de Espeletia y ericáceas.",
+          "Porque inverna enterrado bajo la nieve durante seis meses del año.",
+          "Porque necesita agua salobre de estuarios costeros para digerir semillas.",
+          "Porque solo consume insectos acuáticos de lagunas glaciares profundas."
+        ],
+        "correctIndex": 0,
+        "explanation": "Proteger únicamente el páramo sin el bosque altoandino vecino rompe su ciclo vital, pues requiere árboles viejos con oquedades para nidificar y el páramo para alimentarse."
+      },
+      {
+        "id": 4005,
+        "level": "voluntariado-4",
+        "categoryLabel": "Concepto General de Endemismo",
+        "speciesRelated": "Ética de Datos Abiertos y Conservación in situ",
+        "question": "En proyectos de ciencia ciudadana y divulgación sobre microendémicas amenazadas (CR/EN) como Anolis gorgonae o Pristimantis supatus, ¿por qué se aplica \"difuminación de coordenadas\" (geoprivacy / fuzzing)?",
+        "options": [
+          "Porque los equipos GPS no funcionan bajo los árboles húmedos.",
+          "Para educar y visibilizar el valor ecológico de la región sin revelar la ubicación exacta de nidos o microhábitats a redes de tráfico ilegal y saqueo comercial (biopiratería).",
+          "Para impedir que Parques Nacionales conozca en qué departamento viven.",
+          "Porque las especies cambian de continente cada semana."
+        ],
+        "correctIndex": 1,
+        "explanation": "En especies hiper-restringidas y llamativas, divulgar coordenadas milimétricas expone poblaciones enteras a colectores ilegales; la divulgación responsable protege el hábitat in situ."
+      }
+    ]
+  }
+}
