@@ -105,7 +105,9 @@ export default function Header() {
               >
                 BioExplora <span className={solid ? 'text-ink' : 'text-accent'}>Colombia</span>
               </span>
-              <span className={`block truncate text-[11px] ${solid ? 'text-muted' : 'text-white/80'}`}>
+              <span
+                className={`block text-[10px] leading-tight min-[380px]:text-[11px] ${solid ? 'text-muted' : 'text-white/80'}`}
+              >
                 Especies endémicas de nuestra tierra
               </span>
             </span>

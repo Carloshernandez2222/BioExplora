@@ -672,7 +672,7 @@ export default function Evaluations() {
         <div
           role="tablist"
           aria-label="Tipo de evaluación"
-          className="mx-auto mb-8 grid max-w-xl grid-cols-2 gap-2 rounded-full border border-line bg-surface p-1.5"
+          className="mx-auto mb-8 grid max-w-xl grid-cols-2 gap-2 rounded-3xl sm:rounded-full border border-line bg-surface p-1.5"
         >
           {TABS.map((t) => (
             <button
@@ -683,7 +683,7 @@ export default function Evaluations() {
               aria-selected={tab === t.id}
               aria-controls={`panel-ev-${t.id}`}
               onClick={() => setTab(t.id)}
-              className={`min-h-11 rounded-full px-3 text-sm font-semibold transition ${
+              className={`min-h-11 rounded-2xl px-3 text-sm leading-tight font-semibold transition sm:rounded-full ${
                 tab === t.id ? 'bg-primary text-on-primary shadow' : 'text-muted hover:text-text'
               }`}
             >

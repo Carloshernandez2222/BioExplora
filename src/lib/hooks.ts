@@ -70,3 +70,24 @@ export function useDialog(open: boolean, onClose: () => void) {
     };
   }, [open]);
 }
+
+/**
+ * En pantallas pequeñas, indica si los botones flotantes deben esconderse:
+ * se ocultan mientras se baja por la página y reaparecen al subir o al llegar al final.
+ */
+export function useHideOnScrollDown() {
+  const [hidden, setHidden] = useState(false);
+  useEffect(() => {
+    let last = window.scrollY;
+    const onScroll = () => {
+      const y = window.scrollY;
+      const nearEnd = window.innerHeight + y >= document.documentElement.scrollHeight - 80;
+      if (Math.abs(y - last) < 8) return;
+      setHidden(y > last && y > 200 && !nearEnd);
+      last = y;
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+  return hidden;
+}

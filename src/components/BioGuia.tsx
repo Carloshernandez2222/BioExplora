@@ -1,6 +1,7 @@
 import { Fragment, useEffect, useRef, useState } from 'react';
 import { Bot, Send, X } from 'lucide-react';
 import { GEMINI_KEY, askGemini, type ChatMsg } from '../lib/gemini';
+import { useHideOnScrollDown } from '../lib/hooks';
 
 const SUGERIDAS = ['¿Qué es una especie endémica?', '¿Cuál es la rana más venenosa?', '¿Cómo puedo ayudar?'];
 const BIENVENIDA = '¡Hola! Soy BioGuía 🌿. Pregúntame sobre las especies endémicas y la biodiversidad de Colombia.';
@@ -26,6 +27,7 @@ function Formatted({ text }: { text: string }) {
 
 export default function BioGuia() {
   const [open, setOpen] = useState(false);
+  const hideOnMobile = useHideOnScrollDown();
   const [msgs, setMsgs] = useState<ChatMsg[]>([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
@@ -80,7 +82,7 @@ export default function BioGuia() {
         <button
           type="button"
           onClick={() => setOpen(true)}
-          className="fixed right-4 bottom-4 z-[60] inline-flex h-14 w-14 items-center justify-center gap-2 rounded-full bg-primary font-semibold text-on-primary shadow-2xl transition hover:bg-primary-strong sm:right-6 sm:bottom-6 sm:h-auto sm:min-h-14 sm:w-auto sm:justify-start sm:py-3 sm:pr-5 sm:pl-4"
+          className={`fixed right-4 bottom-4 z-[60] inline-flex h-14 w-14 items-center justify-center gap-2 rounded-full bg-primary font-semibold text-on-primary shadow-2xl transition hover:bg-primary-strong sm:right-6 sm:bottom-6 sm:h-auto sm:min-h-14 sm:w-auto sm:justify-start sm:py-3 sm:pr-5 sm:pl-4 duration-300 ${hideOnMobile ? 'max-sm:translate-y-40' : ''}`}
           aria-label="Abrir BioGuía IA – Asistente de Biodiversidad"
         >
           <Bot className="h-6 w-6" aria-hidden />

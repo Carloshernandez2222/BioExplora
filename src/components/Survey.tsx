@@ -409,7 +409,7 @@ export default function Survey() {
         <div
           role="tablist"
           aria-label="Encuesta"
-          className="mb-6 grid grid-cols-3 gap-1.5 rounded-full border border-line bg-surface p-1.5"
+          className="mb-6 grid grid-cols-3 gap-1.5 rounded-3xl sm:rounded-full border border-line bg-surface p-1.5"
         >
           {TABS.map(({ id, label, icon: Icon }) => (
             <button
@@ -420,7 +420,7 @@ export default function Survey() {
               aria-controls={`panel-enc-${id}`}
               type="button"
               onClick={() => setTab(id)}
-              className={`inline-flex min-h-11 items-center justify-center gap-1.5 rounded-full px-2 text-sm font-semibold transition ${
+              className={`inline-flex min-h-11 items-center justify-center gap-1.5 rounded-2xl px-2 text-sm leading-tight font-semibold sm:rounded-full transition ${
                 tab === id ? 'bg-primary text-on-primary shadow' : 'text-muted hover:text-text'
               }`}
             >
